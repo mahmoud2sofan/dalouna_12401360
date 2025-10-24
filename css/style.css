@@ -1,0 +1,479 @@
+/* 
+ css/styles.css 
+ Student Name: Mahmoud Sofan
+ Student Id: 12401360
+*/
+
+:root {
+    --bg: #faf7f2;
+    --text: hwb(0 12% 88%);
+    --muted: #6b6b6b;
+    --brand: #216869;
+    --brand-2: #49a078;
+    --card: #ffffff;
+    --border: #e9e3db;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+
+}
+.site-header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e3db;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+nav ul {
+    display: flex;
+gap: 20px;
+    width: 100%;
+justify-content: flex-end;
+    margin-right: 200px;
+}
+
+nav ul li a{
+    color: #216869;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #1b4b4c;
+
+}
+li {
+    list-style: none;
+}
+.logo a {
+    margin: 100px;
+    font-weight: 800;
+    color: #216869;
+    font-size: 20px;
+}
+.logo a:hover {
+    color: #143f40;
+}
+
+
+.hero {
+background-image: url(' ../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    position: relative;
+}
+.hero .hero-content {
+text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.hero .green-box {
+    background-color: #49a078;
+    color: #143f40;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 4px 10px;
+    border-radius: 50px;
+}
+.hero-content h1 {
+    font-size: 40px;
+    margin: 15px;
+margin-bottom: 0;
+}
+.hero-content .hero-btn {
+    color: white;
+    cursor: pointer;
+    background-color: #216869 ;
+    border: none;
+font-weight: 900;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+.hero-btn a {
+    color: #e9e3db;
+}
+.hero-content .hero-btn:hover {
+    background-color: #1b4b4c;
+}
+
+.Container-About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-top: 50px;
+}
+.card {
+    background-color: white;
+    padding: 0 20px;
+border: 1px solid #e9e3db;
+    border-radius: 15px;
+    margin:0 20px ;
+width: 33%;
+height: 300px;
+}
+.about-title , .chef-title{
+    font-size: 28px;
+    font-weight: 700;
+}
+.about-description {
+    font-size: 15px;
+}
+.about-extra-description {
+    color: #6B6B6BFF;
+    font-size: 14px;
+}
+.about-buttons {
+    display: flex;
+    justify-content: start;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.about-buttons span {
+    border: 1px solid #e9e3db ;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 5px;
+
+}
+.about-buttons span:hover {
+    border: 1px solid black;
+}
+
+.chef-description {
+    font-size: 15px;
+}
+.chef-extra-description {
+    color: #6B6B6BFF;
+    font-size: 14px;
+}
+.chef-btn {
+    border: none;
+    padding:10px 25px;
+    cursor: pointer;
+    box-shadow: 0 1px 8px #6B6B6BFF;
+    color: white;
+    background-color: #216869 ;
+    border-radius: 50px;
+}
+.chef-btn:hover {
+ background-color: #1b4b4c;
+}
+#menu {
+    margin-top: 5%;
+}
+.menu-cards {
+    display: flex;
+    gap:60px;
+    justify-content: center;
+    align-items: center;
+}
+.menu-title {
+    margin-left: 14%;
+font-size: 28px;
+}
+.mezze , .mains , .drink-sweets{
+    background-color: white;
+    width: calc(20% - 10px);
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+    border: 1px solid #e9e3db;
+    border-radius: 15px;
+    letter-spacing: 1px;
+}
+.dish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0    ;
+}
+.price {
+    font-weight: 700;
+    color: #216869;
+}
+.mezze-title ,.mains-title, .drink-title {
+    font-size: 25px;
+
+}
+.menu-cards h4  {
+    font-size: 18px;
+    line-height: 0;
+}
+.dish-desc {
+    color: #6B6B6BFF;
+    font-size: 14px;
+    margin-top: 0;
+    border-bottom: 1px dashed #dddddd;
+width: 100%;
+}
+.note {
+    color: #6b6b6b;
+    font-size: 12px;
+text-align: center;
+}
+.container-hours {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    margin-top: 80px;
+}
+.hours-card {
+    height: 250px;
+    width: 33%;
+    background-color: white;
+    padding: 0 20px;
+    border-radius: 15px;
+    border: 1px solid #e9e3db;
+}
+.hours-card h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+.hours-card .day {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px dashed #e9e3db ;
+    margin-bottom: 10px;
+}
+.reserve-card {
+    height: 250px;
+    width: 33%;
+    background-color: white;
+    padding: 0 20px;
+    border-radius: 15px;
+    border: 1px solid #e9e3db;
+}
+.reserve-card h3 {
+    font-size: 28px;
+}
+.reserve-card a {
+    color: #216869;
+}
+.container-find-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    margin-top: 80px;
+}
+.find-us-card {
+    background-color: white;
+    border: 1px solid #e9e3db;
+    width: 33%;
+    height: 230px ;
+    padding:  0 20px;
+    border-radius: 15px;
+}
+.find-us-card h3 {
+    font-size: 28px;
+}
+.location-img  {
+    width:calc(33% + 40px) ;
+    height: 230px;
+    border: 1px solid #e9e3db;
+    border-radius: 15px;
+}
+.location-img img {
+width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    display: block;
+}
+.footer-info {
+    width: 100%;
+    height: 100px;
+    color: #6B6B6BFF;
+border-top: 1px solid #e9e3db;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.footer-info span {
+    color: #216869;
+}
+.mezze:hover , .mains:hover , .drink-sweets:hover , .card:hover  , .find-us-card:hover , .reserve-card:hover , .hours-card:hover , .location-img:hover {
+    box-shadow: 0 0 2px #216869;
+}
+
+@media (max-width: 768px){
+ nav {
+     display: flex;
+     flex-direction: column;
+     height: auto;
+
+ }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+justify-content: center;
+margin: 0;
+        gap: 20px;
+        align-items: center;
+        padding: 0;
+    }
+    .logo {
+        margin: 0;
+    }
+    .logo a {
+        font-size: 22px;
+    }
+    nav ul li a {
+        font-size: 15px;
+
+
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .hero p {
+        font-size: 13px;
+    }
+    .hero .green-box {
+
+font-size: 8px;
+    }
+    .hero-btn {
+        font-size: 12px;
+    }
+    .card {
+        width: 100%;
+
+    }
+    .Container-About , .menu-cards , .container-find-us , .container-hours {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-info {
+        font-size: 12px;
+        text-align: center;
+    }
+    .mezze , .mains , .drink-sweets , .card  , .find-us-card , .reserve-card , .hours-card , .location-img {
+        width: 80%;
+        height: 310px;
+    }
+    .reserve-card , .hours-card {
+        height: 250px;
+    }
+    .find-us-card {
+        height: 200px;
+    }
+    .location-img {
+        width: calc(80% + 40px);
+        height: 200px;
+    }
+    .about-buttons {
+        font-size: 10px;
+    }
+    .mezze-title ,.mains-title, .drink-title , .about-title , .chef-title  {
+        font-size: 20px;
+
+    }
+   .about-description , .chef-description {
+       font-size: 13px;
+   }
+    .chef-btn {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .menu-cards h4 {
+        font-size: 15px;
+    }
+    .card {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+.hero h1 {
+    font-size: 60px;
+}
+    .hero p {
+        font-size: 20px;
+    }
+    .hero .green-box {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .hero .hero-btn {
+        font-size: 20px;
+    }
+    .hero  {
+        padding: 30px;
+    }
+    .about-us , .chef-notes {
+        height: 370px;
+        width: calc(100% / 2);
+    }
+  .mezze , .mains , .drink-sweets {
+      width: calc(100% / 3);
+
+  }
+  .menu-cards {
+      justify-content: space-around;
+      margin: 0 30px;
+      gap: 30px;
+  }
+  .container-hours {
+gap: 0;
+  }
+.hours-card , .reserve-card {
+    width: calc(100%/2);
+    margin: 0 30px;
+}
+.container-find-us {
+}
+.find-us-card  {
+    width: calc(100%/2 - 40px );
+    margin-left: 30px;
+}
+ .location-img{
+     width: calc(100% /2 );
+     margin-right: 30px;
+ }
+}
+
+
+
+
